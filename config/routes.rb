@@ -24,7 +24,7 @@ Photogur::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+  get 'pictures' => 'pictures#index'
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
