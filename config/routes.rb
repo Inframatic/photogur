@@ -1,4 +1,6 @@
 Photogur::Application.routes.draw do
+  resources :pictures
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -24,16 +26,19 @@ Photogur::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-  root :to => "pictures#index"
+  
 
-  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  
 
   post 'pictures' => "pictures#create"
 
   get 'pictures' => 'pictures#index'
   get 'pictures/new' => 'pictures#new'
+  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  get 'pictures/:id' => 'pictures#show', as: "picture"
 
-  get 'pictures/:id' => 'pictures#show'
+  root :to => "pictures#index"
+  
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
