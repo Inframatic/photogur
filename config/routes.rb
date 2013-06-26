@@ -26,6 +26,8 @@ Photogur::Application.routes.draw do
   #   end
   root :to => "pictures#index"
 
+  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+
   post 'pictures' => "pictures#create"
 
   get 'pictures' => 'pictures#index'
