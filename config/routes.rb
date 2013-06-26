@@ -24,13 +24,12 @@ Photogur::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  post 'pictures' => "pictures#create"
+
   get 'pictures' => 'pictures#index'
+  get 'pictures/new' => 'pictures#new'
 
-  get 'pictures/0' => 'pictures#picture0'
-  get 'pictures/1' => 'pictures#picture1'
-  get 'pictures/2' => 'pictures#picture2'
-
-  get 'pictures/:id' => 'pictures#show', as: "picture"
+  get 'pictures/:id' => 'pictures#show'
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
