@@ -24,6 +24,8 @@ Photogur::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  root :to => "pictures#index"
+
   post 'pictures' => "pictures#create"
 
   get 'pictures' => 'pictures#index'
