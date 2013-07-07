@@ -11,23 +11,23 @@
  *= require_self
  *= require_tree .
  */
-body{
+/*body{
 	color:#ddd;
-}
+}*/
 * {
    	margin: 0px;
     padding: 0px;
 }
 
 .section {
-   	height: 500px;
+   	height: 400px;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .section.light {
-    height: 350px;
+    height: 470px;
     font-family: Helvetica, Arial, sans-serif; background: #ddd;
     background-size: 10px;
 	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
@@ -36,7 +36,15 @@ body{
 	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
 }
 
-
+.section.bot {
+    height: 280px;
+    font-family: Helvetica, Arial, sans-serif; background: #ddd;
+    background-size: 10px;
+	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -moz-linear-gradient(0px 50%, transparent 90%, rgba(255, 255, 255, 0.10) 50%);
+	background-image: -ms-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
+}
 .section.first {
    	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/house.jpg);
 
@@ -53,10 +61,10 @@ body{
 
 .productShell {
 	width: 960px;
-	height: 100%;
+	height: 90%;
 	background: #fff;
 	margin: 0 auto;
-	padding: 15px;
+	padding: 10px;
 	overflow: hidden;
 	border-style:solid;
 	border-color:#fff;
@@ -92,30 +100,32 @@ body{
 }
 
 .productBox, .productBox aside, .productBox img { width: 270px; height: 270px; }
-.productBox.small, .productBox.small aside, .productBox.small img { width: 130px; height: 132px; }
+.productBox.small, .productBox.small aside, .productBox.small img { width: 130px; height: 132px; 
+background: #9cd211;
+	background: -moz-linear-gradient(top, #9cd211 0%, #6ea11d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cd211), color-stop(100%,#6ea11d));
+	background: -webkit-linear-gradient(top, #9cd211 0%,#6ea11d 100%);
+	background: -o-linear-gradient(top, #9cd211 0%,#6ea11d 100%);
+	background: -ms-linear-gradient(top, #9cd211 0%,#6ea11d 100%);
+	background: linear-gradient(to bottom, #9cd211 0%,#6ea11d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cd211', endColorstr='#6ea11d',GradientType=0 );
+}
 .productBox.small h4 { font-size: 14px; }
 
 .color-blue aside {
-	background: #258dc8;
-	background: -moz-linear-gradient(top, #258dc8 0%, #1f7baf 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#258dc8), color-stop(100%,#1f7baf));
-	background: -webkit-linear-gradient(top, #258dc8 0%,#1f7baf 100%);
-	background: -o-linear-gradient(top, #258dc8 0%,#1f7baf 100%);
-	background: -ms-linear-gradient(top, #258dc8 0%,#1f7baf 100%);
-	background: linear-gradient(to bottom, #258dc8 0%,#1f7baf 100%);
+	background: rgb(17, 152, 242);
+	background: -moz-linear-gradient(top, rgb(17, 152, 242) 0%, rgb(17, 152, 242) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(17, 152, 242)), color-stop(100%,rgb(17, 152, 242)));
+	background: -webkit-linear-gradient(top, rgb(17, 152, 242) 0%,rgb(17, 152, 242) 100%);
+	background: -o-linear-gradient(top, rgb(17, 152, 242) 0%,#1f7baf 100%);
+	background: -ms-linear-gradient(top, rgb(17, 152, 242) 0%,#1f7baf 100%);
+	background: linear-gradient(to bottom, rgb(17, 152, 242) 0%,#1f7baf 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#1f7baf',GradientType=0 );
 
 }
 
 .color-green aside {
-	background: #89c825;
-	background: -moz-linear-gradient(top, #89c825 0%, #6ea11d 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89c825), color-stop(100%,#6ea11d));
-	background: -webkit-linear-gradient(top, #89c825 0%,#6ea11d 100%);
-	background: -o-linear-gradient(top, #89c825 0%,#6ea11d 100%);
-	background: -ms-linear-gradient(top, #89c825 0%,#6ea11d 100%);
-	background: linear-gradient(to bottom, #89c825 0%,#6ea11d 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c825', endColorstr='#6ea11d',GradientType=0 );
+	
 }
 /*		@import url(http://fonts.googleapis.com/css?family=Satisfy);
 	iframe{
@@ -446,3 +456,148 @@ h1 {
 
 .tri-left:hover  {border-right: 50px solid #45c7d3;}
 .tri-right:hover {border-left: 50px solid #45c7d3;}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
+
+
+#nametag {
+	width: 200px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	display:inline-block;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.17);
+	}
+
+/* Headshot Image + Logotype */
+#header {
+	width: 200px;
+	height: 179px;
+/*	margin: 0 -8px;*/
+	background: url('http://en.gravatar.com/userimage/12615615/5582851f017b7c5c7fb38e980a2b4a47.jpg?size=200') no-repeat;
+	color: #fff;
+	border-radius: 10px;
+	}
+
+hgroup {
+	position: relative;
+	top: 130px;
+	left: 30px;
+	}
+
+h1 { 
+	margin: 0;
+	line-height: 0;
+	font-size: 180%;
+	font-weight: 600;
+	}
+
+h2 {
+	margin: 8px 0 0 20px;
+	font-size: 130%;
+	font-weight: 300;
+	font-style: italic;
+	}
+
+/* Introduction */
+#introduction { padding: 5px 20px; 
+}
+
+/* Contact Buttons */
+#contact { position: relative; }
+
+.button {
+	display: inline-block;
+	width: 200px;
+	line-height: 42px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: inset 0px 8px 40px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	}
+
+#telephone { 
+	background: #04a0b8;
+	border-radius: 0 0 0 8px;
+	}
+
+#email { 
+	background: #9cd211;
+	border-radius: 0 0 8px 0;
+	}
+
+em {
+	width: 42px;
+	display: inline-block;
+	position: relative;
+	margin: 0 -20px;
+	line-height: 42px;
+	background: #fff;
+	color: #777;
+	text-align: center;
+	border-radius: 50px;
+	}
+
+/* Email Address & Phone fade in */
+.button span { 
+	position: absolute;
+	left: 0;
+	top: 55px;
+	width: 348px;
+	visibility: hidden;
+	border-radius: 10px;
+	opacity: 0;
+	letter-spacing: 0.12em;
+	}
+
+#telephone span {
+	background: #37bdb5;
+	border: 1px solid #4fcbc4;
+	box-shadow: 0 0 0 1px #33a49d;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	}
+
+#email span {
+	background: #c8db20;
+	border: 1px solid #def418;
+	box-shadow: 0 0 0 1px #8da11d;
+	-webkit-transition: all 0.2s linear; 
+	-moz-transition: all 0.2s linear; 
+	}
+
+#telephone:hover { background: #44d4cb;  }
+#email:hover { background: #c8db20; }
+
+#telephone:hover span { visibility: visible; opacity: 1; }
+#email:hover span { visibility: visible; opacity: 1; }
+
+/* triangles */
+.button span:after, .button span:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	position: absolute;
+	}
+
+#telephone span:after {
+	border-color: none;
+	border-bottom-color: #37bdb5;
+	border-width: 8px;
+	left: 75px;
+	}
+
+#email span:after {
+	border-color: none;
+	border-bottom-color: #c8db20;
+	border-width: 8px;
+	}
+
+/* Firefox Tweak */
+@-moz-document url-prefix() {
+    .button {
+        width: 168.8px;
+    }
+}
