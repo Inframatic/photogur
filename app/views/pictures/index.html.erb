@@ -1,9 +1,17 @@
-
+<nav>
+	<ul>
+	  	<li><a href="http://localhost:3000/pictures/new">Upload Picture<br /></a></li>
+	  	<li><a href="#">Home<br /></a></li>
+	  	<li><a href="#">About us<br /></a></li>
+	  	<li><a href="#">Edit a Photo<br /></a></li>
+	  	<li><a href="#">Destroy a photo<br /></a></li>
+	  	<li><a href="#">Sign in<br /></a></li>
+	  	<li><a href="#">Register<br /></a></li>
+	  	
+	</ul>
+</nav>
+<body>
 <div class="section light">
-
-
-<h1>Pictures (<%= @pictures.length %>)</h1>
-<%= link_to "New Picture", "/pictures/new" %>
 
 
 	<div class="productShell">
@@ -21,51 +29,7 @@
 		<img src= <%=picture[:url]%>/>
 	</div>	
 <% end %>
-
-	<!-- <div cl<!-- <!-- ass="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	</div>
-
-	<div class="productBox small">
-		<aside><h4>Text Name Here</h4></aside>
-		<img src="http://placehold.it/240x240" />
-	 </div> -->					
+			
 </div></div>
 <div class="section first"></div>
 <div class="section light">
@@ -73,13 +37,24 @@
 </div>
 <div class="section second"></div>
 <div class="section light">
-	<div class="productShell"></div>
+	<div class="productShell"><center>
+  <div class="wrapper">
+  <div class="tri-left"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/Facebook-icon.png"/></a></div>
+  <div class="tri-left"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/Twitter-icon.png"/></a></div>
+  <div class="tri-left"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/Tumblr-icon.png"/></a></div>
+    
+  <div class="tri-right"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/RSS-icon.png"/></a></div>
+  <div class="tri-right"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/Digg-icon.png"/></a></div>
+  <div class="tri-right"><a href="#"><img src="http://icons.iconarchive.com/icons/designbolts/free-retro-style-social/32/Google-Plus-icon.png"/></a></div>
+    
+  </div>  
+</center></div>
 </div>
-<div class="productShell"><div class="section third"></div></div>
-<div class="section light">
-	<div class="productShell"></div>
-</div>
-	<div class="blurred">
+<!-- <div class="section third"></div>
+<div class="section light"><div class="productShell"></div></div> -->
+
+</body>
+<!-- 	<div class="blurred">
 		<iframe height="3000" frameborder="0" scrolling="no" ></iframe>
 		<p>Photogur</p>
-</div>
+</div> -->
