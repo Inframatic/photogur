@@ -11,11 +11,9 @@
  *= require_self
  *= require_tree .
  */
-body {
-  background-color: #A0ADA2;
-	
+body{
+	color:#ddd;
 }
-
 * {
    	margin: 0px;
     padding: 0px;
@@ -29,7 +27,7 @@ body {
 }
 
 .section.light {
-    height: 650px;
+    height: 350px;
     font-family: Helvetica, Arial, sans-serif; background: #ddd;
     background-size: 10px;
 	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
@@ -38,12 +36,14 @@ body {
 	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
 }
 
+
 .section.first {
    	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/house.jpg); 
 }
 
 .section.second {
-   	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/wave.jpg); 
+   	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/wave.jpg);
+
 }
 
 .section.third {
@@ -52,6 +52,7 @@ body {
 
 .productShell {
 	width: 960px;
+	height: 100%;
 	background: #fff;
 	margin: 0 auto;
 	padding: 15px;
@@ -100,6 +101,7 @@ body {
 	background: -ms-linear-gradient(top, #258dc8 0%,#1f7baf 100%);
 	background: linear-gradient(to bottom, #258dc8 0%,#1f7baf 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#1f7baf',GradientType=0 );
+
 }
 
 .color-green aside {
@@ -112,3 +114,37 @@ body {
 	background: linear-gradient(to bottom, #89c825 0%,#6ea11d 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c825', endColorstr='#6ea11d',GradientType=0 );
 }
+
+
+		@import url(http://fonts.googleapis.com/css?family=Satisfy);
+	iframe{
+		position:absolute;
+		top:0;
+		left:0;
+		overflow:hidden;
+		width:100%;
+	}
+	iframe.main {
+		position:absolute;
+		height:100%;
+		width:100%;
+	}
+	.blurred {
+		box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+		overflow:hidden;
+		position:fixed;
+		bottom:-10px;
+		left:0;
+		height:200px;
+		width:100%;
+	}
+	.blurred p {
+		font-family: 'Satisfy', cursive;
+		position:absolute;
+		top:50px;
+		width:100%;
+		color:white;
+		text-align: center;
+		text-shadow:1px 1px 2px black;
+		font-size:70px;
+	}
