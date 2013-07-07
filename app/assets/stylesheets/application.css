@@ -11,3 +11,41 @@
  *= require_self
  *= require_tree .
  */
+body {
+  background-color: #A0ADA2;
+	
+}
+
+* {
+   	margin: 0px;
+    padding: 0px;
+}
+
+.section {
+   	height: 500px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section.light {
+    height: 250px;
+    background: #A0ADA2;
+    background-size: 10px;
+	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -moz-linear-gradient(0px 50%, transparent 90%, rgba(255, 255, 255, 0.10) 50%);
+	background-image: -ms-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
+}
+
+.section.first {
+   	/*background-image: url('http://farm9.staticflickr.com/8053/8350261264_af26ffada8_h.jpg'); */
+}
+
+.section.second {
+   	background-image: url('http://farm9.staticflickr.com/8474/8349856979_f0b15c49b1_h.jpg'); 
+}
+
+.section.third {
+   	background-image: url('http://farm9.staticflickr.com/8511/8357630239_22434fe719_h.jpg'); 
+}
