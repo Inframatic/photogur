@@ -3,14 +3,70 @@
 <h1>Pictures (<%= @pictures.length %>)</h1>
 <%= link_to "New Picture", "/pictures/new" %>
 
-<%- @pictures.each do |picture| %>
-	<p><%= picture[:title] %>, <%= picture[:artist] %></p>
-	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+
+<div class="section light">
+	<div class="productShell">
+	<div class="productBox color-blue">
+		<aside><h4>Imagur</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+
+<% @pictures.each do |picture| %>
+	<!-- <p>, <%= picture[:artist] %></p> -->
+	<!-- <%= link_to image_tag(picture.url) %>  -->
+		<div class="productBox small">
+		<aside><h4><%= picture[:title] %></h4></aside>
+		<img src= <%=picture[:url]%>/>
+	</div>	
 <% end %>
 
-<div class="section first">
+	<!-- <div cl<!-- <!-- ass="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
 
-</div>
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	</div>
+
+	<div class="productBox small">
+		<aside><h4>Text Name Here</h4></aside>
+		<img src="http://placehold.it/240x240" />
+	 </div> -->					
+</div></div>
+<div class="section first"></div>
 <div class="section light"></div>
 <div class="section second"></div>
 <div class="section light"></div>
