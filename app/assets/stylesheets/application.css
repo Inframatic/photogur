@@ -11,9 +11,15 @@
  *= require_self
  *= require_tree .
  */
-/*body{
-	color:#ddd;
-}*/ssssaaa
+html{
+	height:100%;
+
+ }
+body{
+	width:80%;
+	margin: 0 auto;
+	overflow: auto;
+}
 * {
    	margin: 0px;
     padding: 0px;
@@ -27,7 +33,9 @@
 }
 
 .content {
-    height: 100%;
+
+    overflow: auto;
+
     font-family: Helvetica, Arial, sans-serif; background: #ddd;
     background-size: 10px;
 	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
@@ -36,8 +44,9 @@
 	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
 }
 
-#header {
-height: 1730px;
+.header {
+overflow: auto;
+
     font-family: Helvetica, Arial, sans-serif; background: #ddd;
     background-size: 10px;
 	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
@@ -46,39 +55,33 @@ height: 1730px;
 	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
 }
 
-#footer {
-    height: 310px;
-    font-family: Helvetica, Arial, sans-serif; background: #ddd;
-    background-size: 10px;
+.footer {
+	overflow: auto;
+	height:100%;
+  font-family: Helvetica, Arial, sans-serif; background: #ddd;
+  background-size: 10px;
 	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
 	background-image: -moz-linear-gradient(0px 50%, transparent 90%, rgba(255, 255, 255, 0.10) 50%);
 	background-image: -ms-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
-	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
+	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); */
 }
 .section.first {
-   	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/house.jpg);
-   	width:100%;
-
+   	background-image: url(http://onlyhdwallpapers.com/wallpaper/the_city_in_black_and_white_high_resolution_desktop_4186x2837_wallpaper-318808.jpg);
 }
 
 .section.second {
    	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/wave.jpg);
-
 }
 
 .section.third {
    	background-image: url(http://monicao.s3.amazonaws.com/bitmaker/girl.jpg); 
 }
 
-#container {
-	width: 360px;
-	height: 1000px;
-	background: #fff;
+.container {
+	width:100%;
+	background:#DCDADE;
 	margin: 0 auto;
-	padding: 10px;
 	overflow: hidden;
-	border-style:solid;
-	border-color:#fff;
 }
 
 .productBox {
@@ -175,10 +178,10 @@ background:-moz-linear-gradient(center top , rgb(17, 152, 242), rgb(27, 138, 212
 	background:-ms-linear-gradient(center top , rgb(17, 152, 242), rgb(27, 138, 212)) repeat scroll 0% 0% transparent;
 	background:-o-linear-gradient(center top , rgb(17, 152, 242), rgb(27, 138, 212)) repeat scroll 0% 0% transparent;
 	background:rgb(17, 152, 242);
-	width: 100%;
 	margin:0px auto;
 	overflow: hidden;
 	height:10%;
+	overflow: auto;
 }
 
 
@@ -202,8 +205,7 @@ nav li a {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 12.5%;
-	
+
 	/*TRANSISTIONS*/
 	-webkit-transition: background 0.5s ease;
 	   -moz-transition: background 0.5s ease;
@@ -485,7 +487,7 @@ h1 {
 	}
 
 /* Headshot Image + Logotype */
-#header {
+.pic {
 	width: 200px;
 	height: 179px;
 /*	margin: 0 -8px;*/
