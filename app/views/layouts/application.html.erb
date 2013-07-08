@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Photogur</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+	<head>
+	  <title>Photogur</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	</head>
 
-</body>
+	<body>
+		<nav>
+			<ul>
+			  	<li><a href="http://localhost:3000/pictures/new">Upload Picture<br /></a></li>
+			  	<li><a href="#">Home<br /></a></li>
+			  	<li><a href="#">About us<br /></a></li>
+			  	<li><a href="#">Edit a Photo<br /></a></li>
+			  	<li><a href="#">Destroy a photo<br /></a></li>
+			  	<li><a href="#">Sign in<br /></a></li>
+			  	<li><a href="#">Register<br /></a></li>
+			  	
+			</ul>
+		</nav>
+	<div class="container">
+		<div class="header">
+			<div class="productBox color-blue">
+					<aside><h4>Check out some of this week's hits</h4></aside>
+					<img src="http://placehold.it/240x240" />
+			</div>
+
+				<% @pictures.each do |picture| %>
+				<!-- <p>, <%= picture[:artist] %></p> -->
+				<!-- <%= link_to image_tag(picture.url) %>  -->
+				<div class="productBox small">
+					<aside><h4><%= picture[:title] %></h4></aside>
+					<img src= <%=picture[:url]%>/>
+				</div>	
+				<% end %>
+			</div>
+		
+		<div class="content">
+	<div class="section first"></div>
+					<div id="nametag">
+					<div id="header">
+						<hgroup>
+							<h1>Ian Steffy</h1>
+							<h2>web dev</h2>
+						</hgroup>
+					</div>
+
+					<div id="introduction">
+						<p>I'm a student at Bitmaker Labs who lives and breaths code</p>
+					</div>
+
+					<div id="contact">
+						<a href="mailto:isteffy@hotmail.com" id="email" class="button">Email <span>isteffy@hotmail.com</span></a>
+					</div>
+				</div>
+		</div>
+			
+
+
+	<div class="section second"></div>
+			<%= yield %>
+			<div class="footer">
+	<div><center>
+  <div class="wrapper">
+  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20E%20blue.png"/></a></div>
+  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20T%20blue.png"/></a></div>
+  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20S%20blue.png"/></a></div>
+    
+  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20F%20blue.png"/></a></div>
+  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20F%20blue.png"/></a></div>
+  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20Y%20blue.png"/></a></div>
+  </div>  
+</center></div>
+</div>
+	</div>
+
+	</body>
+
 </html>
