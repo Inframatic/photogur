@@ -31,3 +31,10 @@
 
 // scrollIframe();
 // });
+$(document).on('page:load', function () {
+	$('.productBox').mouseenter(function(){
+	$(this).find('aside').hide("slide",{direction: 'right'});
+	}).mouseleave(function(){
+	$(this).find('aside').show("slide",{direction: 'left'});
+	});
+});

@@ -36,6 +36,16 @@
 	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
 }
 
+.section.top {
+height: 430px;
+    font-family: Helvetica, Arial, sans-serif; background: #ddd;
+    background-size: 10px;
+	background-image: -webkit-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -moz-linear-gradient(0px 50%, transparent 90%, rgba(255, 255, 255, 0.10) 50%);
+	background-image: -ms-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%);
+	background-image: -o-linear-gradient(0, transparent 90%, rgba(255, 255, 255, .10) 50%); 
+}
+
 .section.bot {
     height: 280px;
     font-family: Helvetica, Arial, sans-serif; background: #ddd;
