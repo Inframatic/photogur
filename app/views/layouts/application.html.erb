@@ -24,20 +24,45 @@
 		</nav>
 	<div class="container">
 		<div class="header">
-<!-- <center>
-		  <div class="wrapper">
-		  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20E%20blue.png"/></a></div>
-		  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20T%20blue.png"/></a></div>
-		  <div class="tri-left"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20S%20blue.png"/></a></div>
-		    
-		  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20F%20blue.png"/></a></div>
-		  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20F%20blue.png"/></a></div>
-		  <div class="tri-right"><a href="#"><img src="http://iconeasy.com/icon/png/System/Multipurpose%20Alphabet/Letter%20Y%20blue.png"/></a></div>
-		  </div>  
-		</center> --></div>
-				<% @pictures.each do |picture| %>
+			
+
+			
+		<article id='slider'>
+    <input type='radio' name='slider' id='slide1' checked />
+    <input type='radio' name='slider' id='slide2' />
+    <input type='radio' name='slider' id='slide3' />
+    <input type='radio' name='slider' id='slide4' />
+    <input type='radio' name='slider' id='slide5' />
+    <div id='slides'>
+        <div id='overflow'>
+            <div class='inner'>
+            	<% @pictures.each do |picture| %>
+                <article>
+                    <img src="<%=picture[:url]%>" />
+                </article>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <div id='controls'>
+        <label for='slide1'></label>
+        <label for='slide2'></label>
+        <label for='slide3'></label>
+        <label for='slide4'></label>
+        <label for='slide5'></label>
+    </div>
+    <div id='active'>
+        <label for='slide1'></label>
+        <label for='slide2'></label>
+        <label for='slide3'></label>
+        <label for='slide4'></label>
+        <label for='slide5'></label>
+    </div>
+</article>
+</div>
 				
-				<% end %>
+				
+				
 
 			
 		
@@ -49,7 +74,7 @@
 			
 	</div>
 	<div class="footer">
-				<!-- <div id="nametag">
+<!-- 				<div id="nametag">
 					<div class="pic">
 						<hgroup>
 							<h1>Ian Steffy</h1>
@@ -63,8 +88,8 @@
 
 					<div id="contact">
 						<a href="mailto:isteffy@hotmail.com" id="email" class="button">Email <span>isteffy@hotmail.com</span></a>
-					</div>
-				</div> -->
+					</div> -->
+				</div>
 			</div>
 </div>
 </body>
